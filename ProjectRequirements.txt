@@ -1,0 +1,102 @@
+Follow the universal workflow of DLWP 4.5 (1st edition) for a dataset of your choice. 
+
+You can use the tensorflow datasets, MNIST, Reuters, IMDB and Boston Housing Price, or an external dataset. Work exclusively in a Jupyter notebook.
+
+You can only use DLWP Part 1 layers (Chapters 1–4) i.e. restrict your models to tensorflow sequential Dense and Dropout layers.
+
+Your Jupyter notebook should read as a report – not just a sequence of code cells. Structure your report with markdown headings, subheadings, tables etc.
+
+You can use as much DLWP code and code from the video notebooks as you wish but you must reference all code that is not original: credit will be given for model assembly using third-party code, and extra credit may be awarded for original code.
+
+Export your Jupyter notebook to html and submit. Do not submit your notebook or any data files. Submit only the html export of your notebook.
+
+(For Colab users: Colab does not have an html facility. Either:
+
+Download the colab notebook and load into Jupyter; you will then be able to export as html
+
+or
+
+Follow the instructions in 
+this blog
+ i.e. download from colab and then reload into colab's session storage.  Then run the script
+
+%%shelljupyter nbconvert --to html /Your notebook path/file.ipynb
+
+and download the html version.)
+
+
+Review Criteria
+Credit will be awarded for:
+
+report structure and quality as a document
+
+adherence to the deep learning workflow
+
+a systematic investigation
+
+interpretation of results.
+
+Additional credit may be awarded for:
+
+modular programming
+
+external dataset (but not an online tutorial dataset)
+
+extensive experimentation
+
+understanding and technique that exceeds the module syllabus
+
+Submit an html export of the Jupyter notebook
+
+https://github.com/sreent/dense-neural-networks/tree/main/codes
+
+
+
+Final Coursework] Regularisation and Exploration
+One of the review criteria is extremely thorough examination of a series of models on a single dataset.
+This implies we cannot we cannot just explore one neural network architecture, we need explore a few different architectures, e.g. deep, deeper, wider, deep+wide and so no.
+We also need also explore different regularisation techniquesl, e.g. Dropout, L2 (or L1), Dropout + L2.
+
+
+Dense neural networks
+
+The second half is devoted to neural nets
+• Key mathematical tools
+• Using Google’s tensorflow to build neural nets of any depth
+• Using neural nets for classification and regression tasks
+• Under- and over-fitting and mitigation techniques
+• The Deep Learning workflow
+
+
+
+Updated Jupyter Notebook Structure
+
+Introduction
+Brief overview of the project's aim to classify movie reviews into positive or negative sentiments using deep learning.
+
+Defining the Problem
+Clarification that the task is a binary classification problem focusing on sentiment analysis of text data.
+
+Dataset Exploration (Including Importing Libraries)
+Initial exploration of the dataset, highlighting the text and tag columns for the deep learning tasks.
+Import required libraries for data handling and visualization.
+
+Choosing a Measure of Success and Evaluation Protocol
+Measure of Success: Selection of accuracy, precision, recall, F1 score, and AUC as performance metrics given the binary classification nature of the problem.
+Evaluation Protocol: Decision to use a hold-out validation set approach alongside K-fold cross-validation for a thorough model evaluation.
+
+Data Preprocessing
+Cleaning text data by removing unnecessary characters and lowercasing.
+Tokenizing and padding sequences for uniform input size.
+Addressing the TensorFlow warning by ensuring compatibility with the version used.
+
+Model Development
+Building a baseline model with TensorFlow's Sequential API, focusing on simplicity with Dense layers.
+Introduction of a second model with added complexity (dropout, dense layers, regularization) for comparison.
+
+Model Evaluation
+Application of the chosen evaluation protocol to assess model performance.
+Discussion of results using the selected measures of success.
+
+Conclusion and Future Directions
+Summary of findings and potential improvements or further explorations.
